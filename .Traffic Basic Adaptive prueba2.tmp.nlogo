@@ -66,12 +66,12 @@ to go
     ;;show xcor
 
     ;;if xcor < -20 and xcor > -24 [pits car-ahead]
-    if xcor < -22 and xcor > -24 [set speed 0]
+    if xcor < -20 and xcor > -24 [set speed 0]
 
     ;; [set speed (0)]
     show mecanicos
     ;;if speed < 0.1 [ set speed speed-limit ]
-    if speed > 0.9 [ set speed speed-limit ]
+    ;if speed > 0.9 [ set speed speed-limit ]
 
     fd speed
     ;;show speed
